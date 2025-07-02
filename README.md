@@ -153,4 +153,4 @@ See [ERROR_HANDLING.md](ERROR_HANDLING.md) for details.
 
 ## License
 
-MIT License. See LICENSE file. 
+Proprietary License 
