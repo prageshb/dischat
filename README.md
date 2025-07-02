@@ -5,7 +5,7 @@
 A modular, privacy-focused Discord bot for anonymous 1-on-1 and group chat (text and voice), with advanced moderation, per-guild configuration, and robust error handling. Built with TypeScript, discord.js, and MongoDB for scalability and reliability.
 
 - **Anonymous chat**: 1-on-1 and group, text and voice
-- **Queue-based matching**: FIFO, 30-day repeat protection
+- **Queue-based matching**: FIFO, 7-day repeat protection
 - **Per-guild configuration**: All channels and settings are set via slash commands
 - **Advanced moderation**: Keyword filters, infractions, chat flagging, mod logging
 - **Anti-spam**: Voice join spam protection, timeouts
@@ -41,7 +41,7 @@ A modular, privacy-focused Discord bot for anonymous 1-on-1 and group chat (text
 ## Features
 
 - Anonymous 1-on-1 and group chat (text & voice)
-- Queue-based matching (FIFO, 30-day repeat protection)
+- Queue-based matching (FIFO, 7-day repeat protection)
 - Moderation: keyword filters, infractions, chat flagging, mod logging
 - Anti-spam: voice join spam protection, timeouts
 - Per-guild configuration (all channels set via slash commands)
@@ -66,7 +66,7 @@ All required channels and categories must be set **per guild** using slash comma
 
 ---
 
-## Admin & Super Admin Commands
+## Admin Commands
 
 - `/admin stats` — View bot statistics
 - `/admin inf add <user> <type> <reason>` — Add infraction
@@ -74,11 +74,14 @@ All required channels and categories must be set **per guild** using slash comma
 - `/admin inf delete <user>` — Delete latest infraction
 - `/admin active` — View active sessions
 - `/admin wait` — View queue status
+- `/setlobby`, `/setchatchannel`, `/setmodchannel`, `/setvoicecategory`, `/setvoicelobby` — Per-guild setup (admin only)
+
+## Super Admin Commands
+
 - `/addguild <guild_id>` — Allow a guild to use the bot (super admin only)
 - `/removeguild <guild_id>` — Remove a guild from the allowlist (super admin only)
 - `/delbot <guild_id>` — Delete all data for a guild (super admin only)
 - `/listguilds` — List all allowed guilds (super admin only)
-- `/setlobby`, `/setchatchannel`, `/setmodchannel`, `/setvoicecategory`, `/setvoicelobby` — Per-guild setup (admin only)
 
 ---
 
