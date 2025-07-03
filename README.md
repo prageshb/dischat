@@ -42,7 +42,7 @@ A modular, privacy-focused Discord bot for anonymous 1-on-1 and group chat (text
 
 - Anonymous 1-on-1 and group chat (text & voice)
 - Queue-based matching (FIFO, 7-day repeat protection)
-- Moderation: keyword filters, infractions, chat flagging, mod logging
+- Moderation: keyword filters, infractions (warning, timeout, ban), chat flagging, mod logging
 - Anti-spam: voice join spam protection, timeouts
 - Per-guild configuration (all channels set via slash commands)
 - Ephemeral threads and voice channels
@@ -68,10 +68,10 @@ All required channels and categories must be set **per guild** using slash comma
 
 ## Admin Commands
 
+- `/adminwarn <user> <reason>` — Warn a user (admin only)
+- `/admintimeout <user> <reason> <duration>` — Timeout a user for a specified duration in minutes (admin only)
+- `/adminban <user> <reason>` — Ban a user (admin only)
 - `/admin stats` — View bot statistics
-- `/admin inf add <user> <type> <reason>` — Add infraction
-- `/admin inf list <user>` — List user infractions
-- `/admin inf delete <user>` — Delete latest infraction
 - `/admin active` — View active sessions
 - `/admin wait` — View queue status
 - `/setlobby`, `/setchatchannel`, `/setmodchannel`, `/setvoicecategory`, `/setvoicelobby` — Per-guild setup (admin only)
@@ -153,4 +153,4 @@ See [ERROR_HANDLING.md](ERROR_HANDLING.md) for details.
 
 ## License
 
-Proprietary License 
+MIT License. See LICENSE file. 
